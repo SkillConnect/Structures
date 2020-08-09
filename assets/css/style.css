@@ -576,6 +576,13 @@ section {
   padding-bottom: 30px;
 }
 
+
+@media (max-width: 992px) {
+  #about {
+    margin-bottom: -58px;
+  }
+}
+
 .about .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
 }
@@ -585,8 +592,8 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
-  font-style: italic;
+  text-align: center;
+  font-style: bold;
   color: #666;
 }
 
@@ -743,6 +750,19 @@ section {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+/*cta*/
+.cta-red {
+  background: #e21f28;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.cta-white {
+  background: #FFFFFF;
+  background-size: cover;
+  padding: 60px 0;
 }
 
 /*--------------------------------------------------------------
