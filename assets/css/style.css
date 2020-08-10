@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+
 #topbar {
   background: #fff;
   padding: 10px 0;
@@ -570,7 +571,57 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients {
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .owl-nav, .gallery .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0f4f5 !important;
+}
+
+.gallery .owl-dot.active {
+  background-color: #3fbbc0 !important;
+}
+
+.gallery .gallery-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.gallery .gallery-carousel .center {
+  border: 6px solid #3fbbc0;
+  margin: -10px;
+  box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+/*.clients {
   padding-top: 20px;
 }
 
@@ -611,7 +662,8 @@ section {
 
 .clients .owl-dot.active {
   background-color: #ffc451 !important;
-}
+}*/
+/*image logo slider */
 
 
 /*--------------------------------------------------------------
