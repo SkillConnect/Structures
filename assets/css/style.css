@@ -361,7 +361,8 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------STRUCTURES---------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 114px);
+  height: 100%;
+  /*height: calc(100vh - 114px);*/
   padding: 0;
   overflow: hidden;
 }
@@ -373,7 +374,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item {
   width: 100%;
-  height: calc(100vh - 114px);
+  height: 100%;
+  height: calc(115vh - 114px);
+  /*height: calc(100vh - 114px);*/
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -382,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.6);
+  /*background-color: rgba(13, 30, 45, 0.6);*/
   position: absolute;
   height: 100%;
   width: 100%;
@@ -418,6 +421,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#hero h1 {
+  font-size: 72px;
+  font-weight: 1000;
+}
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
@@ -1595,7 +1602,7 @@ section {
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 15px;
-  min-height: 200px;
+  min-height: 120px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   background: #fff;
@@ -1614,7 +1621,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 5px 0;
-  color: #111;
+  color: #FF0000;
 }
 
 .testimonials .testimonial-item h4 {
@@ -2656,7 +2663,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 20px 0 0px 0;
   background: #1b1b1b;
 }
 
