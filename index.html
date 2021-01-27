@@ -42,11 +42,11 @@
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="projects.html">Projects</a></li>
               <li><a href="career.html">Career</a></li>
-              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </nav>
 
@@ -74,7 +74,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Welcome to <br></h2>
                 <h1> <span style="color: #000000"><strong>STRUCTURES</strong></span></h1>
                 <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> --><!-- 
-                <a href="about_us.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                <a href="about.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">35000</span>
+              <span id="project-count">35000</span>
               <p>Projects</p>
             </div>
           </div>
@@ -670,7 +670,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Pages</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="about_us.html">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="Services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="projects.html">Projects</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
@@ -706,7 +706,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    $(window).on('load', function() {
+      const startDate = new Date('01/15/2021');
+      const currDate = new Date();
+      const diffTime = Math.abs(currDate - startDate);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+      const projectCount = 35000 + diffDays * 2;
+      document.getElementById('project-count').innerHTML = projectCount;
+    });
+  </script>
 </body>
 
 </html>
