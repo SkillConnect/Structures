@@ -2511,25 +2511,26 @@ section {
   border: 0;
   padding: 12px 15px;
   transition: 0.3s;
-  color: #fff;
+  color: #000000;
   border-radius: 0;
-  border-right: 2px solid #cda45e;
+  border-right: 2px solid #FF0000;
   font-weight: 600;
   font-size: 15px;
 }
 
 .specials .nav-link:hover {
-  color: #cda45e;
+  color: #000000;
+  /*cda45e*/
 }
 
 .specials .nav-link.active {
   color: #1a1814;
-  background: #cda45e;
-  border-color: #cda45e;
+  background: #FF0000;
+  border-color: #FF0000;
 }
 
 .specials .nav-link:hover {
-  border-color: #cda45e;
+  border-color: #000000;
 }
 
 .specials .tab-pane.active {
@@ -2541,7 +2542,7 @@ section {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000000;
 }
 
 .specials .details p {
