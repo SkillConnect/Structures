@@ -380,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: top right;
   background-repeat: no-repeat;
   overflow: hidden;
+  /*text-align: left;*/
 }
 
 #hero .carousel-item::before {
@@ -401,9 +402,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 67%;
+  left: 4%;
+  right: 27%;
   overflow: hidden;
 }
 
@@ -418,8 +419,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
+  text-align: left;
+  /*margin-left: 100px;*/
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 900;
 }
 
